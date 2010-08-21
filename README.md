@@ -28,7 +28,7 @@ For Rails3
 
 add a gem to Gemfile as following,
 
-    gem 'sunspot_mongoid'
+    gem 'vinova_sunspot_mongoid', :require => 'sunspot_mongoid'
 
 create config/initializers/sunspot_mongoid.rb,
 
@@ -44,7 +44,7 @@ add gems to Gemfile as following,
 
 and install sunspot_mongoid as rails plugin,
 
-    rails plugin install git://github.com/jugyo/sunspot_mongoid.git
+    rails plugin install git://github.com/vinova/sunspot_mongoid.git
 
 Links
 ----

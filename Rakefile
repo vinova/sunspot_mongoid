@@ -10,7 +10,7 @@ begin
     gem.email = "jugyo.org@gmail.com"
     gem.homepage = "http://github.com/jugyo/sunspot_mongoid"
     gem.authors = ["jugyo"]
-    gem.add_runtime_dependency "mongoid", ">= 2.0.0.beta.16"
+    gem.add_runtime_dependency "mongoid", ">= 2.0.0.beta.15"
     gem.add_runtime_dependency "sunspot", ">= 1.1.0"
     gem.add_runtime_dependency "sunspot_rails", ">= 1.1.0"
     gem.add_development_dependency "shoulda", ">= 0"
