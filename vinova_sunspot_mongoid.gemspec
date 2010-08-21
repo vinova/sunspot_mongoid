@@ -28,7 +28,8 @@ Gem::Specification.new do |s|
      "lib/sunspot/mongoid.rb",
      "lib/sunspot_mongoid.rb",
      "test/helper.rb",
-     "test/test_sunspot_mongoid.rb"
+     "test/test_sunspot_mongoid.rb",
+     "vinova_sunspot_mongoid.gemspec"
   ]
   s.homepage = %q{http://github.com/jugyo/sunspot_mongoid}
   s.rdoc_options = ["--charset=UTF-8"]
