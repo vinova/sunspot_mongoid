@@ -36,7 +36,15 @@ module Sunspot
       end
 
       def load_all(ids)
-        @clazz.criteria.in(:_id => ids)
+        bson_object_ids = []
+        ids.each do |id|
+          if BSON::ObjectID.legal?(id)
+            bson_object_ids << BSON::ObjectID(id)
+          end
+        end
+        
+        # Find object using both id string and BSON::OBjectID initilized from id string
+        @clazz.where(:_id.in => bson_object_ids + ids )
       end
     end
   end
