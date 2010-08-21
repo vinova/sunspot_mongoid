@@ -4,13 +4,13 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "sunspot_mongoid"
+    gem.name = "vinova_sunspot_mongoid"
     gem.summary = %Q{A Sunspot wrapper for Mongoid.}
     gem.description = %Q{A Sunspot wrapper for Mongoid that is like sunspot_rails.}
     gem.email = "jugyo.org@gmail.com"
     gem.homepage = "http://github.com/jugyo/sunspot_mongoid"
     gem.authors = ["jugyo"]
-    gem.add_runtime_dependency "mongoid", ">= 0"
+    gem.add_runtime_dependency "mongoid", ">= 2.0.0.beta.16"
     gem.add_runtime_dependency "sunspot", ">= 1.1.0"
     gem.add_runtime_dependency "sunspot_rails", ">= 1.1.0"
     gem.add_development_dependency "shoulda", ">= 0"
