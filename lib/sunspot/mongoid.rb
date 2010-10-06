@@ -38,12 +38,12 @@ module Sunspot
       def load_all(ids)
         bson_object_ids = []
         ids.each do |id|
-          if BSON::ObjectID.legal?(id)
-            bson_object_ids << BSON::ObjectID(id)
+          if BSON::ObjectId.legal?(id)
+            bson_object_ids << BSON::ObjectId(id)
           end
         end
         
-        # Find object using both id string and BSON::OBjectID initilized from id string
+        # Find object using both id string and BSON::ObjectId initilized from id string
         @clazz.where(:_id.in => bson_object_ids + ids )
       end
     end
